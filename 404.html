@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<noscript>
+  			<meta
+  				http-equiv="refresh"
+  				content="0; url=https://github.com/express-rate-limit/express-rate-limit"
+  			/>
+		</noscript>
+		<script type="text/javascript">
+			// default redirection target
+			let target = 'https://github.com/express-rate-limit/express-rate-limit'
+			// strip the leading and trailing slashes and lowercase
+			let path = location.pathname.substr(1).toLowerCase();
+			if (path.endsWith('/')) {
+				path = path.substring(0, path.length-1)
+			}
+			if (path.startsWith('err_erl_') || path.startsWith('wrn_erl_')) {
+				target += '/wiki/Error-Codes#' + path;
+			}
+			document.addEventListener("DOMContentLoaded", (event) => {
+				const link = document.getElementById('link');
+				if (link) link.href = target;
+			});
+			window.location.href = target;
+		</script>
+		<title>Page Redirection</title>
+	</head>
+	<body>
+		If you are not redirected automatically, follow
+		<a
+			id="link"
+			href="https://github.com/express-rate-limit/express-rate-limit"
+		>
+			this link
+		</a>
+		to the Express Rate Limit page.
+	</body>
+</html>
