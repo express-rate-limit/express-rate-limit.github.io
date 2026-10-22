@@ -17,7 +17,7 @@
 				path = path.substring(0, path.length-1)
 			}
 			if (path.startsWith('err_erl_') || path.startsWith('wrn_erl_')) {
-				target += 'reference/error-codes#' + path.repaceAll('_', '-');
+				target += 'reference/error-codes#' + path;
 			}
 			document.addEventListener("DOMContentLoaded", (event) => {
 				const link = document.getElementById('link');
